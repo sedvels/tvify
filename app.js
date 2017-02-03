@@ -12156,7 +12156,7 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function getShows(fn) {
-	_jquery2.default.ajax('http://api.tvmaze.com/shows', {
+	_jquery2.default.ajax('https://api.tvmaze.com/shows', {
 		success: function success(shows, textStatus, xhr) {
 			fn(shows);
 		}
@@ -12165,7 +12165,7 @@ function getShows(fn) {
 
 function searchShows(busqueda, fn) {
 	console.log(busqueda);
-	_jquery2.default.ajax('http://api.tvmaze.com/search/shows', {
+	_jquery2.default.ajax('https://api.tvmaze.com/search/shows', {
 		data: busqueda,
 		success: function success(respuesta, textStatus, xhr) {
 			fn(respuesta);
